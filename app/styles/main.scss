@@ -1,0 +1,58 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+html, body {
+  height: 100%;
+}
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+  cursor: move;
+}
+.kanban {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+}
+
+.kanban-board, .kanban-header {
+  display: table-row;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.kanban-board {
+  height: 100%;
+}
+
+.panel.dragging {
+  opacity: 0.6;
+}
+
+.kanban-column {
+  display: table-cell;
+  width: 20%;
+  background-color: #999;
+  border: {
+    color: #666;
+    width: 1px;
+    style: solid;
+    collapse: collapse;
+  }
+  table-layout: fixed;
+  &.over {
+    background-color: red;
+  }
+}
+.column-inner {
+  max-height: 100%;
+  padding: 10px;
+  overflow-y: auto;
+}
