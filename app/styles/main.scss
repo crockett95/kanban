@@ -6,6 +6,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 html, body {
   height: 100%;
 }
+body {
+  background-color: red;
+}
 [draggable] {
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -39,9 +42,9 @@ html, body {
 .kanban-column {
   display: table-cell;
   width: 20%;
-  background-color: #999;
+  background-color: rgba(255,255,255,0.5);
   border: {
-    color: #666;
+    color: #fff;
     width: 1px;
     style: solid;
     collapse: collapse;
@@ -50,9 +53,16 @@ html, body {
   &.over {
     background-color: red;
   }
+  .kanban-header & {
+    background-color: #fff;
+    padding: 5px;
+  }
+  overflow-x: none;
 }
 .column-inner {
+  height: 100%;
   max-height: 100%;
   padding: 10px;
   overflow-y: auto;
+  overflow-x: none;
 }

@@ -23,13 +23,13 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<div class="container-fluid kanban">
+<div class="kanban">
     <header class="kanban-header row">
-      <div class="kanban-column">Lorem ipsum.</div>
-      <div class="kanban-column">Nam, aut!</div>
-      <div class="kanban-column">Dolorum, sit.</div>
-      <div class="kanban-column">Illum, accusamus!</div>
-      <div class="kanban-column">Nam, fuga.</div>
+      <div class="kanban-column"><h4 class="text-center">Lorem ipsum.</h4></div>
+      <div class="kanban-column"><h4 class="text-center">Nam, aut!</h4></div>
+      <div class="kanban-column"><h4 class="text-center">Dolorum, sit.</h4></div>
+      <div class="kanban-column"><h4 class="text-center">Illum, accusamus</h4></div>
+      <div class="kanban-column"><h4 class="text-center">Nam, fuga.</h4></div>
     </header>
     <main class="row kanban-board">
       <section class="kanban-column"><div class="column-inner"><div draggable class="panel panel-default">
@@ -112,23 +112,6 @@
       </div></div></section>
     </main>
 </div>
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -140,8 +123,8 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>
